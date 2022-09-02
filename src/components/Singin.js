@@ -5,7 +5,7 @@ import Chatroom from './Chatroom';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 function test() {
-  
+  console.log("11h40 dat")
 }
  
 function BasicExample() {
