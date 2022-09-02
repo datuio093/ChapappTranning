@@ -21,7 +21,7 @@ import { initializeApp } from "firebase/app";
 
 
 
-DataTransfer
+
 
 function Chatroom() {
   //   const dummy = useRef();
