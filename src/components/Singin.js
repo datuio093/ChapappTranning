@@ -4,8 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Chatroom from './Chatroom';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
-
-
+function test() {
+  
+}
+ 
 function BasicExample() {
     
   const auth = getAuth();
