@@ -1,0 +1,40 @@
+
+
+.parent{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 800px;
+background-color: rgb(255, 224, 253);
+}
+.signin{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(255, 242, 252);
+padding: 10px;
+border-radius: 40px;
+height: 350px;
+width: 350px;
+text-align: center;
+
+}
+
+
+.none1{
+    
+    color: rgb(255, 7, 110);
+}
+button{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(250, 138, 229) !important;
+    border: none;
+    
+}
+p{
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
