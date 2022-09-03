@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
-import { getFirestore } from "firebase/firestore";
+import { getFirestore ,Timestamp  } from "firebase/firestore";
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { collection, addDoc } from "firebase/firestore"; 
 import { query, orderBy, limit } from "firebase/firestore";  
-
+import firebase from 'firebase/compat/app';
 const firebaseConfig = {
     apiKey: "AIzaSyAfgSv9Zzog9vm3Gt6KX6bpZPEPFZDiyJs",
     authDomain: "my-chat-1eac4.firebaseapp.com",
@@ -36,6 +36,8 @@ const Getdata = async () =>{
 
 
 function Chatroom() {
+  var date = new Date();
+
   const auth = getAuth();
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
@@ -59,7 +61,7 @@ function Chatroom() {
     const { uid, photoURL } = auth.currentUser;
     await addDoc(collection(db, "messages"),{
       text: formValue,
-      createdAt: "none",
+      createdAt: date.getTime() ,
       uid,
       photoURL
     });
