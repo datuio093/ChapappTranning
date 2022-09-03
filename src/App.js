@@ -7,6 +7,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
+import SignOut from './components/Signout';
 
 
 const firebaseConfig = {
@@ -34,7 +35,7 @@ const [user] = useAuthState(auth);
   return (
     <div className="App">
       <header>
-  
+  <SignOut />
       </header>
 
       <section>

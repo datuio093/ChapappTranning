@@ -25,7 +25,7 @@ function BasicExample() {
               // The signed-in user info.
               const user = result.user;     
 
-              console.log("aaaa");
+      
                 
             
             }).catch((error) => {
