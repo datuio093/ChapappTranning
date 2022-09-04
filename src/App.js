@@ -35,11 +35,9 @@ const [user] = useAuthState(auth);
   return (
     <div className="App">
       <header>
-  <SignOut />
+           <SignOut />
       </header>
-
       <section>
-     
         {user ? <Chatroom /> : <Signin />}
       </section>
 
@@ -47,7 +45,5 @@ const [user] = useAuthState(auth);
   );
 
 }
-
-
 
 export default App;

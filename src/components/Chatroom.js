@@ -16,6 +16,7 @@ const firebaseConfig = {
     appId: "1:173188183647:web:96c12ccf564d29d6244dea",
     measurementId: "G-NRQ27PFHHL"
 };
+
 const Getdata = async () =>{
   try {
     const app = initializeApp(firebaseConfig);
@@ -31,13 +32,8 @@ const Getdata = async () =>{
   }
 } 
 
-
-
-
-
 function Chatroom() {
   var date = new Date();
-
   const auth = getAuth();
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
@@ -76,13 +72,13 @@ function Chatroom() {
       <span ref={dummy}></span> 
     </main>
     <form onSubmit={sendMessage}>
-
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
       <button type="submit" disabled={!formValue}>🕊️</button>
     </form>
   </>
   )
 }
+
 function ChatMessage(props) {
     const auth = getAuth();
     const { text, uid, photoURL } = props.message;
