@@ -11,14 +11,7 @@ import SignOut from './components/Signout';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAfgSv9Zzog9vm3Gt6KX6bpZPEPFZDiyJs",
-  authDomain: "my-chat-1eac4.firebaseapp.com",
-  databaseURL: "https://my-chat-1eac4-default-rtdb.firebaseio.com",
-  projectId: "my-chat-1eac4",
-  storageBucket: "my-chat-1eac4.appspot.com",
-  messagingSenderId: "173188183647",
-  appId: "1:173188183647:web:96c12ccf564d29d6244dea",
-  measurementId: "G-NRQ27PFHHL"
+
 };
 
 
